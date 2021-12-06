@@ -202,7 +202,8 @@ body {
 }
 
 .preview-btn:hover,
-.filtr-btn:hover {
+.filtr-btn:hover,
+.online-btn:hover {
   background-color: #118ce8;
   color: var(--second-colr-text);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -590,13 +591,13 @@ address {
 
 .list-item-footer {
   display: flex;
-  justify-content: center;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
 .subscribe-box {
   margin-left: 70px;
+  width: 50%;
 }
 
 .subscribe-title {
@@ -622,6 +623,7 @@ address {
 }
 
 .modal {
+  padding: 40px;
   width: 528px;
   min-height: 600px;
   background-color: #ffffff;
@@ -652,4 +654,99 @@ address {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 10px;
+}
+
+.form-input-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--prymary-text-color);
+}
+
+.modal-form-coment {
+  height: 120px;
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.online {
+  position: relative;
+  right: 0;
+  top: -12px;
+}
+
+.online-title {
+  margin-bottom: 20px;
+}
+
+.contact-wrap {
+  width: 50%;
+}
+
+.online-form {
+  display: flex;
+}
+
+.online-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0);
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  outline: none;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--second-colr-text);
+}
+
+.online-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.online-input:focus {
+  border-color: var(--accent-color);
+}
+
+.online-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-icon {
+  margin-left: 10px;
 }
